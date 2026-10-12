@@ -1,0 +1,46 @@
+Pushing to https://github.com/Alishaw99/llmops_series.git
+POST git-receive-pack (199904 bytes)
+remote: error: GH013: Repository rule violations found for refs/heads/main.        
+remote: 
+remote: - GITHUB PUSH PROTECTION        
+remote:   —————————————————————————————————————————        
+remote:     Resolve the following violations before pushing again        
+remote: 
+remote:     - Push cannot contain secrets        
+remote: 
+remote:             
+remote:      (?) Learn how to resolve a blocked push        
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push        
+remote:             
+remote:             
+remote:       —— OpenAI API Key ————————————————————————————————————        
+remote:        locations:        
+remote:          - commit: e9f8462c16d54f9075e10552b429ee22cbe0b348        
+remote:            path: .env:3        
+remote:             
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        
+remote:        https://github.com/Alishaw99/llmops_series/security/secret-scanning/unblock-secret/3KZiK6GmkNzwtZld2UMgYrPSzhl        
+remote:             
+remote:             
+remote:       —— Hugging Face User Access Token ————————————————————        
+remote:        locations:        
+remote:          - commit: e9f8462c16d54f9075e10552b429ee22cbe0b348        
+remote:            path: .env:5        
+remote:             
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        
+remote:        https://github.com/Alishaw99/llmops_series/security/secret-scanning/unblock-secret/3KZiK8j3yhvPxrJIVDTrkH3PNhT        
+remote:             
+remote:             
+remote:       —— LangSmith Personal Access Token ———————————————————        
+remote:        locations:        
+remote:          - commit: e9f8462c16d54f9075e10552b429ee22cbe0b348        
+remote:            path: .env:8        
+remote:             
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        
+remote:        https://github.com/Alishaw99/llmops_series/security/secret-scanning/unblock-secret/3KZiK5mfFv21vNuAGHGDVJnhioP        
+remote:             
+remote: 
+remote: 
+To https://github.com/Alishaw99/llmops_series.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/Alishaw99/llmops_series.git'
