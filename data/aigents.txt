@@ -1,0 +1,3 @@
+An AI Agent is an intelligent software system capable of understanding goals, reasoning about problems, making decisions, using external tools, and executing tasks with varying degrees of autonomy.
+Unlike traditional AI applications that primarily respond to individual prompts, AI agents can carry out multistep workflows, interact with external environments, and adapt their actions based on feedback.
+For example, a traditional chatbot might explain how to analyze a dataset. An AI agent could retrieve the dataset, validate its quality, execute Python code, generate visualizations, interpret results, and prepare a report.

@@ -5,6 +5,22 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "ipykernel>=7.4.0",
-    "python-dotenv>=1.2.4",
+    "docx2txt==0.9",
+    "faiss-cpu>=1.15.1",
+    "fastapi==0.115.6",
+    "ipykernel==6.30.0",
+    "jinja2==3.1.4",
+    "langchain==0.3.27",
+    "langchain-community==0.3.27",
+    "langchain-core==0.3.72",
+    "langchain-google-genai==2.1.8",
+    "langchain-groq==0.3.6",
+    "langchain-openai==0.2.10",
+    "langsmith>=0.14.7",
+    "openai>=1.109.1",
+    "pandas>=3.0.6",
+    "python-dotenv==1.1.1",
+    "python-multipart==0.0.20",
+    "structlog>=26.1.0",
+    "uvicorn==0.32.1",
 ]
