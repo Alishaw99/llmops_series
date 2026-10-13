@@ -1,0 +1,51 @@
+{"timestamp": "2026-10-13T03:33:21.576565Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"config_keys": ["embedding_model", "llm"], "timestamp": "2026-10-13T03:33:21.578709Z", "level": "info", "event": "YAML config loaded"}
+{"key_name": "OPENAI_API_KEY", "timestamp": "2026-10-13T03:33:21.579111Z", "level": "info", "event": "API key loaded"}
+{"required_keys": ["OPENAI_API_KEY"], "timestamp": "2026-10-13T03:33:21.579358Z", "level": "info", "event": "API key configuration validated"}
+{"embedding_provider": "openai", "llm_provider": "openai", "timestamp": "2026-10-13T03:33:21.579564Z", "level": "info", "event": "ModelLoader initialized"}
+{"session_id": "session_20261012_203321_f99312fa", "temp_dir": "data\\session_20261012_203321_f99312fa", "faiss_dir": "faiss_index\\session_20261012_203321_f99312fa", "sessionized": true, "timestamp": "2026-10-13T03:33:21.580329Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "D:\\llmops_series\\data\\databricks.pdf", "saved_as": "data\\session_20261012_203321_f99312fa\\ecd9c142.pdf", "timestamp": "2026-10-13T03:33:21.583755Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 105, "timestamp": "2026-10-13T03:33:26.231740Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 1365, "chunk_size": 200, "overlap": 20, "timestamp": "2026-10-13T03:33:26.244929Z", "level": "info", "event": "Documents split"}
+{"provider": "openai", "model": "text-embedding-3-small", "timestamp": "2026-10-13T03:33:26.245500Z", "level": "info", "event": "Loading embedding model"}
+HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+Loading faiss with AVX512 support.
+Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+Loading faiss with AVX2 support.
+Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+Loading faiss.
+Successfully loaded faiss.
+HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+{"added": 1, "index": "faiss_index\\session_20261012_203321_f99312fa", "timestamp": "2026-10-13T03:33:34.529883Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2026-10-13T03:33:34.530275Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2026-10-13T03:33:34.533175Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"config_keys": ["embedding_model", "llm"], "timestamp": "2026-10-13T03:33:34.534906Z", "level": "info", "event": "YAML config loaded"}
+{"key_name": "OPENAI_API_KEY", "timestamp": "2026-10-13T03:33:34.535182Z", "level": "info", "event": "API key loaded"}
+{"required_keys": ["OPENAI_API_KEY"], "timestamp": "2026-10-13T03:33:34.535452Z", "level": "info", "event": "API key configuration validated"}
+{"embedding_provider": "openai", "llm_provider": "openai", "timestamp": "2026-10-13T03:33:34.535594Z", "level": "info", "event": "ModelLoader initialized"}
+{"provider": "openai", "model": "gpt-4.1-mini", "timestamp": "2026-10-13T03:33:34.535704Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20261012_203321_f99312fa", "timestamp": "2026-10-13T03:33:34.573771Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20261012_203321_f99312fa", "timestamp": "2026-10-13T03:33:34.574292Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2026-10-13T03:33:34.576772Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"config_keys": ["embedding_model", "llm"], "timestamp": "2026-10-13T03:33:34.578175Z", "level": "info", "event": "YAML config loaded"}
+{"key_name": "OPENAI_API_KEY", "timestamp": "2026-10-13T03:33:34.578460Z", "level": "info", "event": "API key loaded"}
+{"required_keys": ["OPENAI_API_KEY"], "timestamp": "2026-10-13T03:33:34.578629Z", "level": "info", "event": "API key configuration validated"}
+{"embedding_provider": "openai", "llm_provider": "openai", "timestamp": "2026-10-13T03:33:34.578713Z", "level": "info", "event": "ModelLoader initialized"}
+{"provider": "openai", "model": "text-embedding-3-small", "timestamp": "2026-10-13T03:33:34.578851Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20261012_203321_f99312fa", "timestamp": "2026-10-13T03:33:34.642877Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20261012_203321_f99312fa", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20261012_203321_f99312fa", "timestamp": "2026-10-13T03:33:34.643163Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20261012_203321_f99312fa", "user_input": "what is databricks", "answer_preview": "Databricks is a unified data analytics platform that manages task orchestration, cluster management, monitoring, and error reporting. It supports coll", "timestamp": "2026-10-13T03:34:09.976232Z", "level": "info", "event": "Chain invoked successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20261012_203321_f99312fa", "user_input": "important components of databricks", "answer_preview": "Important components of Databricks include Databricks clusters, which are sets of computation resources and configurations for running data engineerin", "timestamp": "2026-10-13T03:34:34.458470Z", "level": "info", "event": "Chain invoked successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20261012_203321_f99312fa", "user_input": "what is mettric views", "answer_preview": "I don't know.", "timestamp": "2026-10-13T03:34:55.512015Z", "level": "info", "event": "Chain invoked successfully"}
